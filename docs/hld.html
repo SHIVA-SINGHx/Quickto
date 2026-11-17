@@ -135,7 +135,7 @@ sequenceDiagram
     <ul class="list-disc list-inside text-sm space-y-1">
       <li>Kafka delivery is <b>at-least-once</b>, a crash can double-count analytics (fine for dashboards, per repo notes).</li>
       <li><code>products.enrich.dlq</code> catches a product after 3 failed enrich attempts.</li>
-      <li>Admin routes need header <code>x-admin-key</code>. No JWT, despite <code>.env.example</code> having leftover JWT vars (unused in code).</li>
+      <li>Admin routes need the <code>x-admin-key</code> header. Admin authentication uses this shared key; there is no JWT flow.</li>
       <li>Shares Kafka + Typesense containers with V1 (Quick Commerce Searching), own data by prefix (<code>quickto.</code>, <code>quickto_</code>) and own Mongo db / Redis DB.</li>
       <li>Only REST + Kafka found in code. No WebSocket, gRPC, or GraphQL.</li>
       <li>No formal test framework. Only plain <code>node:assert</code> self-checks (<code>pnpm check</code>), no DB/Kafka/HTTP involved in those checks.</li>
