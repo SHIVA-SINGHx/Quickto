@@ -4,7 +4,7 @@ Quickto is a demo grocery-search application. A shopper chooses a delivery area 
 
 > **Scope:** This project demonstrates grocery catalog search, product ingestion, AI-assisted tagging, and search analytics. The cart is a UI demo; it does not place real orders, process payments, or dispatch deliveries.
 
-![Quickto shop and delivery-area picker](docs/screenshots/shop.png)
+![Quickto shop and delivery-area picker](docs/screenshots/docs/screenshots/Quickto-·-groceries-in-10-minutes-11-17-2026_05_39_PM.png)
 
 _The screenshot shows the initial shop screen and its delivery-area picker. Product results and admin metrics require the backend services and seeded data described below._
 
